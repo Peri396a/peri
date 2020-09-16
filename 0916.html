@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        p.test1 {
+            white-space: nowrap;
+            width: 200px;
+            border: 1px solid #000000;
+            overflow: hidden;
+            text-overflow: clip;
+        }
+
+        p.test2 {
+            white-space: nowrap;
+            width: 200px;
+            border: 1px solid #953355;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Hello World!</h1>
+
+    <p>2421 정윤희</p>
+
+    <h2>text box</h2>
+    <p class="test1">This is some long text that will not fit in the box</p>
+
+    <h2>text box2</h2>
+    <p class="test2">This is some long text that will not fit in the box</p>
+    
+    <div id="2">
+        <div id="header">
+            <h1 style="background-color:DodgerBlue;">Header</h1>
+        </div>
+        <div id="wrap">
+            <div id="aside">
+                <h1 style="background-color:SlateBlue;">Aside</h1>>
+            </div>
+            <div id="content">
+                <h1 style="background-color:Violet;">Content</h1>>
+            </div>
+        </div>
+    </div>
+
+
+</body></html>
