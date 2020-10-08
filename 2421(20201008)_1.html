@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <title> 제어문 연습 2421정윤희</title>
+    <meta charset="utf-8">
+    <script>
+        function calculate() {
+            var height = parseFloat(document.getElementById("height").value);
+            var weight = parseFloat(document.getElementById("weight").value);
+            var bmi = (weight / height / height).toFixed(1);
+            document.getElementById("bmi").innerHTML = bmi;
+
+        }
+
+        function check() {
+            var value = parseInt(document.getElementById("num").value);
+            if (value % 2 == 0)
+                document.getElementById("result").innerHTML = value + "는 짝수입니다.";
+            else
+                document.getElementById("result").innerHTML = value + "는 홀수입니다.";
+        }
+
+    </script>
+</head>
+
+<body>
+    <p> 수를 입력해주세요. <input type="text" size=5 id="num"> </p>
+    <p id="result"></p>
+    <p><input type="button" value="확인" onclick="check()"></p>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+
+<!doctype html>
+<html>
+<head>
+    <title> 반복문연습 2421정윤희</title>
+    <script>
+        var n = 100;
+        //배열을 선언
+        var arr = [];
+        for (var i = 2; i <= n; i++) {
+            arr[i] = true;
+        }
+        var bound = Math.floor(Math.sqrt(n));
+        var x = 2;
+        while (x <= bound) {
+            for (var i = 2 * x; i <= n; i += x)
+                arr[i] = false;
+            while (!arr[++x]);
+        }
+
+        document.write("<p> 에라토스테네스의 체를 이용한 소수 </p>");
+        for (var i = 2; i <= n; i++) {
+            if (arr[i]) {
+                document.write(i + "&nbsp;&nbsp;");
+            }
+        }
+
+    </script>
+</head>
+<body>
+</body>
+</html>
